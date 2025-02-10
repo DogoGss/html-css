@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*  SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children  
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        a:visited {
+           color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+        .especial {
+            color: darkblue;
+            background-color: rgba(192, 1, 1, 0.432);
+        }
+        .especial::before {
+            content: '⇒';
+        }
+        .especial::after {
+            content: '⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li>Como falar comigo: </li>
+        <p>
+            <li><a href="https://www.linkedin.com/in/diogo-santos-b58536260/" target="_blank" rel="external" class="especial">-Linkedin</a></li>
+
+            <li><a href="https://www.instagram.com/diogo.gss/" target="_blank" rel="external">Instagram</a></li>
+
+            <li><a href="https://br.pinterest.com/DogoGSS/" target="_blank" rel="external">-Pinterest</a></li>
+
+            <li><a href="https://x.com/DogoGSS" target="_blank" rel="external">-X</a></li>
+        </p>
+    </ul>
+</body>
+</html>
